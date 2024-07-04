@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="head">
+            <h1 class="rr">Portfolio</h1>
+            <ul class="rtr">
+                <li><a class="nvi" href="thom.html">Home</a></li>
+                <li><a class="nvi" href="thom.html">About</a></li>
+                <li><a class="nvi" href="projects.html">Projects</a></li>
+                <li><a class="nvi" href="contactc.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <h1 class="h2q">Contact</h1>
+        <p class="par">rejen@yyahoo.com</p>
+    </section>
+    <section>
+        <div class="contact-form">
+            <form action="{{ url_for('send_message') }}" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btnh" type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+        <hr>
+    </section>
+    <footer class="">
+        <div class="footr">
+            <div class="foot">
+                <span class="nn">© 2024 Portfolio</span>
+              </div>
+              <div class="icon-foot">
+                 <div><a href="https://github.com/thompson005"><i class="fa-brands fa-github fa-2xl" style="color: white;"></i></a></div> 
+                 <div><a href="https://www.linkedin.com/in/rejen-thompson-765271258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin fa-2xl" style="color: #f9fafa;"></i></a></div> 
+                  <div>                
+                    
+                    <a href="https://www.instagram.com/_thompson_005/"><i class="fa-brands fa-instagram fa-2xl" style="color: #f5f7f9;"></i></a></i></div>
+              </div>
+        </div>
+    </footer>
+</body>
+<style>
+    hr{
+        width: 90%;
+    }
+        .footr{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .icon-foot{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 30px;
+        margin-right: 100px;
+    }
+    .nn{
+        color: white;
+        margin-left: 100px;
+        font-size: 1.2em;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+        .par{
+        color: aliceblue;
+        font-size: 1.2em;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        margin-left: 100px;
+    }
+        .h2q{
+        color: #91DDCf;
+        margin-left: 100px;
+        font-size: 1.2em;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    .contact-form {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-radius: 50px; border:1px solid rgba(255, 255, 255, 0.18); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 40%;
+        margin-left: 100px;
+        position: relative;
+    }
+    .form-group {
+        margin-bottom: 15px;
+        color: #fff;
+        font-size: 1em;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .form-group input, 
+    .form-group textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 1em;
+    }
+    .form-group textarea {
+        height: 100px;
+    }
+    .btnh{
+        background-color:#91DDCf;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 1em;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    .form-group button:hover {
+        background-color: #45a049;
+    }
+        .head{
+        margin-top: 0;
+        text-decoration: none;
+    }
+    body{
+        background-color: black;
+    }
+        .head{
+      
+      height: auto;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .rtr{
+      list-style: none;
+      margin-right: 90%;
+      display: flex;
+      gap: 60px;
+  }
+  .nvi{
+        color: #91DDCf;
+        font-size: 1.2em;
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    .nvi:hover{
+        color: aliceblue;
+    }
+    .rr{
+        display: inline;
+        color: white;
+        font-size: 2em;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    @media(max-width:600px){
+        .rtr{
+            display: none;
+        }.contact-form{
+            width: 80%;
+            margin-left: 0;
+        }
+        .h2q,.par{
+            margin-left: 0;
+        }
+        .footr{
+            display: block;
+        }
+        .nn{
+            margin-left: 0;
+        }
+        .icon-foot{
+            height: 1%;
+        }
+    }
+</style>
+</html>

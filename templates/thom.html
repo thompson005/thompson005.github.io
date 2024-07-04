@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<nav>
+    <ul class="sidebar">
+        <li class="dih" onclick=hide()><a   href="#home"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a class="nvd" href="#about">About</a></li>
+        <li><a class="nvd" href="projects.html">Projects</a></li>
+        <li><a class="nvd" href="contactc.html">Contact</a></li>
+    </ul>
+
+    <div class="head">
+
+        <h1 class="rr">Portfolio</h1>
+        <ul class = "rtr">
+            <li><a class="nvi" href="#home">Home</a></li>
+            <li><a class="nvi" href="#about">About</a></li>
+            <li><a class="nvi" href="projects.html">Projects</a></li>
+            <li><a class="nvi" href="contactc.html">Contact</a></li>
+        </ul>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i onclick=showSide() class="fa fa-bars" style="color: white;"></i>
+        </label>
+
+    </div>
+    
+</nav>
+<section class="home">
+    <div class="mid">
+        <div class="fet"><h1 class="ee"> Hello,</h1>
+            <h1 class="ee">I am <span class="name">Rejen Thompson, </span></h1>
+            <h1 class="ee"> Cybersecurity enthusiast</h1><br><br>
+            <p class="ty"> Welcome! Here, I showcase my skills and projects in cybersecurity. As a dedicated security analyst, I focus on network security, ethical hacking, programming, and automation. Thank you for visiting!.</p><br>
+            <div class="icon">
+                <a href="https://github.com/thompson005"><i class="fa-brands fa-github fa-2xl" style="color: white;"></i></a>
+                <a href="https://www.linkedin.com/in/rejen-thompson-765271258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin fa-2xl" style="color: #f9fafa;"></i></a>
+                <a href="https://www.instagram.com/_thompson_005/"><i class="fa-brands fa-instagram fa-2xl" style="color: #f5f7f9;"></i></a>
+            </div>
+
+
+        </div>
+        <div class="bet"><img class="tt" src="newre.jpg" alt="reju"></div>
+    </div>
+    <br>
+    <br>
+</section>
+<section class="about"  id="about">
+    <h1 class="h1q">About</h1>
+    <div class="gri">
+        <p class="aboutsub">
+
+            Passionate cybersecurity analyst with expertise in network security, ethical hacking, and programming. Dedicated to protecting digital assets and continuously enhancing my skills in the ever-evolving cybersecurity landscape.</p>
+    
+    <div class="tab-titles">
+        <div class="tab-contents" id="skills">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <ul>
+                <li><span class="name">Programming</span><br>Proficient in Python, C, Java, and SQL</li><br>
+                <li><span class="name">Security Tools:</span><br>Proficient with BurpSuite, Bettercap, Nmap and Zap</li><br>
+                <li><span class="name">Network Security</span><br>Expertise in protecting and managing network infrastructures.</li><br>
+            </ul>
+        </div>
+        <div class="tab-contents" id="internship">
+            <p class="tab-links active-link" onclick="opentab('internship')">Internship</p>
+            <ul>
+                <li><span class="name">CyberXtron, Chennai - <br>Security Research and Security Automation Intern <br>
+
+                    January 2024 - Present</span><br>Conducted security research to identify vulnerabilities and propose mitigation strategies.
+                    Developed and implemented security automation scripts to enhance system defenses.
+                    Performed penetration testing to assess the security posture of applications and systems.</li><br>
+                
+            </ul>
+        </div>
+        <div class="tab-contents" id="education">
+            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+            <ul>
+                <li><span class="name">TIS</span><br>Schooling</li><br>
+                <li><span class="name">Shiv Nadar University</span><br>B.Tech Cybersecurity</li><br>
+                <li><span class="name">Coursera</span><br>Google Cybersecurity certificate</li><br>
+            </ul>
+        </div>
+       
+        
+        
+    </div>
+ 
+</div>
+</section>
+
+<section class="resume">
+    <h2 class="h1q">My Resume</h2>
+    <button class="btt"><a class="nvi" href="https://drive.google.com/file/d/1D9L27zf6o3BHULuwvBDnf7e9FxAUDd8V/view?usp=drivesdk">Download</a></button>
+
+    <br>
+    <br>
+    <hr>
+</section>
+<footer class="">
+    <div class="footr">
+        <div class="foot">
+            <span class="nn">© 2024 Portfolio</span>
+          </div>
+          <div class="icon-foot">
+             <div><a href="https://github.com/thompson005"><i class="fa-brands fa-github fa-2xl" style="color: white;"></i></a></div> 
+             <div><a href="https://www.linkedin.com/in/rejen-thompson-765271258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin fa-2xl" style="color: #f9fafa;"></i></a></div> 
+              <div>                
+                
+                <a href="https://www.instagram.com/_thompson_005/"><i class="fa-brands fa-instagram fa-2xl" style="color: #f5f7f9;"></i></a></i></div>
+          </div>
+    </div>
+        
+      
+</footer>
+  <script>
+    function showSide(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'block'
+    }
+    function hide(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+  </script>  
+</body>
+<style>
+    .sidebar{
+        position:fixed;
+        top: 0;
+        list-style: none;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        z-index: 999;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border:1px solid rgba(255, 255, 255, 0.18); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        display: none;
+    }
+    .sidebar li{
+        margin-bottom: 50px;
+        margin-right: 30px;
+    }
+    .nvd{
+        color: #91DDCf;
+        font-size: 1.2em;
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    .checkbtn{
+        font-size: 30px;
+        float: right;
+        margin-right: 2%;
+    
+        cursor: pointer;
+        display: none;
+        
+    }
+    #check{
+        display: none;
+    }
+    hr{
+        width: 90%;
+    }
+    .footr{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .icon-foot{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 30px;
+        margin-right: 100px;
+    }
+    .nn{
+        color: white;
+        margin-left: 100px;
+        font-size: 1.2em;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+
+    }
+    .btt{
+        margin-left: 100px;
+        
+        border-radius: 30px;
+        background-color: #55AD9B;
+        padding: 10px;
+    }
+    .btt a{
+        color: black;
+    }
+    .icon{
+        margin-top: 20px;
+        display: flex;
+        gap: 40px;
+    }
+    .tab-contents{
+        border-color: #55AD9B;
+        border-style: solid;
+        border-width: 5px;
+        padding: 15px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-radius: 50px; border:1px solid rgba(255, 255, 255, 0.18); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }
+    .tab-contents li{
+        list-style: none;
+        color: white;
+        margin-left: -40px;
+        font-size: 1em;
+        font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+    }
+    .tab-titles{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 130px;
+    }
+    .tab-links{
+        font-size: 1.2em;
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+        position: relative;
+    }
+    .gri{
+        width:80%;
+        margin-left: 100px;
+
+    }
+    .aboutsub{
+        color: white;
+        font-size: 1.2em;
+    }
+    .h1q{
+        color: #91DDCF;
+        font-size: 2em;
+        margin-left: 100px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+
+    }
+    .nvi:hover{
+        color: aliceblue;
+    }
+    body{
+    background-color: black;
+    }
+
+    .head{
+        margin-top: 0;
+        text-decoration: none;
+    }
+    .rr{
+        display: inline;
+        color: white;
+        font-size: 2em;
+        font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+    }
+    .ee{
+        color: white;
+        font-size: 1.5em;
+        display: inline;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    .head{
+      
+        height: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .rtr{
+        list-style: none;
+        margin-right: 90%;
+        display: flex;
+        gap: 60px;
+    }
+    .nvi{
+        color: #91DDCf;
+        font-size: 1.2em;
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    .name{
+        color:#91DDCF;
+    }
+    .mid{
+        height: 300px;
+        width: 80%;
+        padding: 10px;
+        margin-top: 20px;
+        margin-left: 100px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-radius: 20px; border:1px solid rgba(255, 255, 255, 0.18); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        
+        
+    }
+    p{
+        color: white;
+        font-size: 18px;
+        font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+    }
+    .tt{
+        height: 300px;
+        margin-left: 180px;
+        border-radius: 200px;
+    }
+    .fet{
+        height: 60%;
+        grid-row: span2 ;
+        margin-left: 100px;
+        
+        
+    }
+    .bet{
+        height: 20%;
+        grid-row: span2;
+        
+    }
+    .ty{
+        font-size: 1em;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    @media(max-width: 1109px){
+        .checkbtn{
+            display: block;
+        }
+
+        .rtr{
+            display: none;
+        }
+        .ty{
+            display: block;
+        }
+        .mid{
+            display: block;
+            margin-left: 1%;
+            width: 90%;
+            height: 80%;
+            
+        }
+
+        .tt{
+            margin-left: 0;
+            margin-top: 10%;
+            border-radius: 20px;
+        }
+        .fet{
+            margin-left: 0;
+        }
+        .tab-titles{
+            display: block;
+            margin-bottom: 10px;
+        }
+        .tab-contents{
+            margin-bottom: 10px;
+        }
+        .h1q ,.gri,.btt{
+            margin-left: 1%;
+        }
+        .footr{
+            display: block;
+        }
+        .nn{
+            margin-left: 0;
+        }
+        .icon-foot{
+            height: 1%;
+            margin-right: 0;
+        }    
+
+
+    }
+    
+    
+</style>
+</html>
